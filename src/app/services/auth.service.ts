@@ -33,7 +33,7 @@ export class AuthService {
     let token=localStorage.getItem('token');
     if(!token) return null;
  
-    return new JwtHelper().decodeToken(token);
+    return new JwtHelper().decodeToken(token);//decoding token
  
   }
 }
